@@ -17,5 +17,5 @@ class TestProductEndpoints:
         
         assert len(response.data) == 10
         
-        assert response.data[0]['category_total_count'] == 12
+        assert response.data[0]['category_products_count'] == 12
         assert response.data[0]['category_name'] == "Appliances"

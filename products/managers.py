@@ -13,7 +13,7 @@ class ProductQuerySet(models.QuerySet):
         ).values('total')
 
         return self.annotate(
-            category_total_count=Subquery(category_counts)
+            category_products_count=Subquery(category_counts)
         )
 
     def top_10_per_category(self):
